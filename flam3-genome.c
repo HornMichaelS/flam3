@@ -1028,7 +1028,7 @@ main(argc, argv)
             }
 
             /* Adjust bounding box half the time */
-            if (flam3_random_bit(&f.rc) || random_mode) {
+            if (flam3_random_bit() || random_mode) {
                double bmin[2], bmax[2];
                flam3_estimate_bounding_box(&cp_orig, 0.01, 100000, bmin, bmax, &f.rc);
                if (flam3_random_isaac_01(&f.rc) < 0.3) {

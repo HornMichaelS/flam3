@@ -1,0 +1,4 @@
+#!/bin/bash
+
+export CFLAGS="-L../jpeg-6b -L../libxml2-2.9.0/.libs -I../jpeg-6b -I../libxml2-2.9.0 -s USE_ZLIB=1 -s USE_LIBPNG=1"
+
